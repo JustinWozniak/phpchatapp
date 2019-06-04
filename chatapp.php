@@ -28,6 +28,54 @@ include("chat_controller.php");
         </form>
 
     </form>
+
+
+
+
+    <div class="container">
+    
+    	<div class="row">
+	       <?php 
+	       	//scan "uploads" folder and display them accordingly
+	       $folder = "uploads";
+	       $results = scandir('uploads');
+	       foreach ($results as $result) {
+	       	if ($result === '.' or $result === '..') continue;
+	       
+	       	if (is_file($folder . '/' . $result)) {
+	       		echo '
+	       		<div>
+		       		<div>
+			       		<img src="'.$folder . '/' . $result.'" alt="..." class="thumbnail">
+				       		<div>
+				       		<p><a href="remove.php?name='.$result.'" role="button">Remove</a></p>
+			       		</div>
+		       		</div>
+	       		</div>';
+	       	}
+	       }
+	       ?>
+    	</div>
+    	
+		
+
+	      <div>
+	      	<div>
+	           <form action="upload.php" method="post" enctype="multipart/form-data">
+				  <div>
+				    <label for="file" class="uploadClass">Select a file to upload</label>
+				    <input type="file" name="file">
+				    <p class="uploadClass">Only jpg,jpeg,png and gif file with maximum size of 1 MB is allowed.</p>
+				  </div>
+				  <input type="submit" value="Upload">
+				</form>
+			</div>
+	      </div>
+    </div> <!-- /container -->
+
+
+
+
     <div class="chatBox" >
         <?php
         echo "<br>";

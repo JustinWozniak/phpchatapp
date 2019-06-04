@@ -38,3 +38,12 @@ input[type=text] {
       text-align: center;
       background-color: rgb(86, 53, 207);
   }
+
+  .uploadClass  {
+    color: white;
+  }
+
+  .thumbnail  {
+    width:200px;
+    height: 200px;
+  }
