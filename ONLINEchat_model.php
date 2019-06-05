@@ -5,9 +5,9 @@ function makeConnection()
 
   // variables for mysql
   $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "mychatapp";
+  $username = "u910989898_root";
+  $password = "Thedrunkfox67";
+  $dbname = "u910989898_chata";
 
   // Create connection  ***$CONN VARIABLE IS USED ALL THROUGH THE PROGRAMM RIGHT NOW
   $conn = new mysqli($servername, $username, $password, $dbname);
