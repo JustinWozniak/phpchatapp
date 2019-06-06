@@ -12,6 +12,7 @@ include("chat_controller.php");
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="./style.css" />
     <title>Justins Chat App</title>
 </head>
@@ -33,7 +34,7 @@ include("chat_controller.php");
 	           <form action="upload.php" method="post" enctype="multipart/form-data">
 				  <div>
 				    <!-- <label for="file" class="uploadClass">Select a file to upload</label> -->
-				    <input type="file" name="file" class="button">
+				    <input type="file" name="file" class="filebutton">
 				    <!-- <p class="uploadClass">Only jpg,jpeg,png and gif file with maximum size of 1 MB is allowed.</p> -->
 				  </div>
 				  <input type="submit" value="Upload File" class="button">
@@ -53,7 +54,7 @@ include("chat_controller.php");
 	<p>Welcome to the bathroom wall!<br>
 Watch your step!!!<br>
 Feel free to take a gander while your here!! Leave an inspirational quote, or upload your favorite picture.
-Dont be shy, nobody will every know what you wrote....muahahahahah</p>
+Dont be shy, nobody will every know who wrote it....muahahahahah</p>
 <blockquote>"BOY AM I LUCKY THAT I DIDNT USE THE OTHER STALL!</blockquote>
   </div>
 

@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				$response = 'Invalid file extension.';
 			}
 			//validate file size
-			if ($size / 1024 / 1024 > 2) {
+			if ($size / 5024 / 5024 > 2) {
 				$valid = false;
 				$response = 'File size is exceeding maximum allowed size.';
 			}

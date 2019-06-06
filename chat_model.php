@@ -45,7 +45,7 @@ function history_AddLine($message, $conn)
 {
 
   $sql = "INSERT INTO chatapp (messages)
-    VALUES (\"$message\");";
+    VALUES (\"$message.<br>\");";
   // echo($sql);
   if ($conn->query($sql) === true) {
     $last_id = $conn->insert_id;
